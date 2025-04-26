@@ -3,12 +3,14 @@ import Button from "./Button";
 
 const AboutUs = () => {
   return (
-    <div className=" bg-white flex items-center justify-center p-6 md:p-10 mb-10px">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-30 w-full max-w-7xl  ">
+    <div className=" bg-white  sudip py-6 ">
+      <div className="grid grid-cols-1 md:grid-cols-2   container  justify-between  py-6 px-auto   ">
         {/* Section 1 */}
-        <div className=" flex flex-col px-4 gap-10  h-full">
+        <div className=" flex flex-col  gap-10 w-full ">
           <div>
-            <hr className="w-50 sm:w-42 border-0 h-1 text-cyan-600 bg-gray-300 mb-3 rounded-2xl" />
+            <div className="w-30  bg-gray-300  mb-6 ">
+              <div className="w-8  border-[1.5px]  border-cyan-600  "></div>
+            </div>
             <h1 className="text-2xl sm:text-2xl font-medium text-gray-800 mb-1">
               Our
             </h1>
@@ -80,22 +82,22 @@ const AboutUs = () => {
         </div>
 
         {/* Section 2 */}
-        <div className="relative  flex  justify-center  h-full">
-          <div className="relative w-full max-w-lg h-[500px]  sm:h-[600px]">
+        <div className="relative  flex  justify-center ">
+          <div className=" flex flex-col justify-between items-center h-[500px]  sm:h-[600px]">
             <img
               src="src/components/images/2people_IMG_1014-2-scaled.jpg"
               alt="store"
-              className="absolute top-0 left-[-40px] w-[280px] sm:w-[340px] h-[180px] sm:h-[230px] object-cover rounded-xl shadow-lg border-8 border-gray-200 z-30"
+              className=" h-[250px] object-cover rounded-xl shadow-lg border-8 border-gray-200"
             />
             <img
               src="src/components/images/showitem_IMG_9302-scaled.jpg"
               alt="industrial"
-              className="absolute top-[60px] sm:top-[110px] left-[140px] sm:left-[160px] w-[280px] sm:w-[340px] h-[180px] sm:h-[230px] object-cover rounded-xl shadow-lg border-8 border-gray-200 z-20"
+              className="  h-[250px]  object-cover rounded-xl shadow-lg border-8 border-gray-200 "
             />
             <img
               src="src/components/images/single_5117-2-scaled.jpg"
               alt="tech"
-              className="absolute top-[180px] sm:top-[230px] left-0 w-[380px] sm:w-[440px] h-[280px] sm:h-[350px] sm:mt-10 object-cover rounded-xl shadow-lg border-8 border-gray-200 z-10"
+              className=" h-[250px] object-cover rounded-xl shadow-lg border-8 border-gray-200 "
             />
           </div>
         </div>

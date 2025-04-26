@@ -1,2 +1,19 @@
 @import "tailwindcss";
 
+
+.html{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+overflow-x:hidden ;
+}
+/* body{
+    background-image: url("./components/images/background.png");
+
+} */
+
+.sudip{
+@apply px-5 sm:px-10 md:px-20 lg:px-24 xl:px-32 2xl:px-50
+}
+
+  
