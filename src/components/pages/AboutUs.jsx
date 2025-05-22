@@ -1,12 +1,13 @@
 import React from "react";
 import Button from "./Button";
+import ImageSlider from "../SingleComponent/ImageSlider";
 
 const AboutUs = () => {
   return (
-    <div className=" bg-white  sudip py-6 ">
-      <div className="grid grid-cols-1 md:grid-cols-2   container  justify-between  py-6 px-auto   ">
+    <div className=" bg-white flex justify-center w-full  pt-10 pb-8 ">
+      <div className="grid grid-cols-1 md:grid-cols-4  gap-10  items-center justify-between sudip py-6   ">
         {/* Section 1 */}
-        <div className=" flex flex-col  gap-10 w-full ">
+        <div className=" flex flex-col col-span-2 gap-10 w-full  ">
           <div>
             <div className="w-30  bg-gray-300  mb-6 ">
               <div className="w-8  border-[1.5px]  border-cyan-600  "></div>
@@ -82,7 +83,7 @@ const AboutUs = () => {
         </div>
 
         {/* Section 2 */}
-        <div className="relative  flex  justify-center ">
+        {/* <div className="relative  flex  justify-center ">
           <div className=" flex flex-col justify-between items-center h-[500px]  sm:h-[600px]">
             <img
               src="src/components/images/2people_IMG_1014-2-scaled.jpg"
@@ -100,6 +101,9 @@ const AboutUs = () => {
               className=" h-[250px] object-cover rounded-xl shadow-lg border-8 border-gray-200 "
             />
           </div>
+        </div> */}
+        <div className="relative  col-span-2   t ">
+          <ImageSlider className="" />
         </div>
       </div>
     </div>

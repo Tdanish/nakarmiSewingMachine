@@ -5,6 +5,7 @@ import Layout from "./components/pages/Layout";
 import AboutUs from "./components/pages/AboutUs";
 import ContactUs from "./components/pages/ContactUs";
 import Gallery from "./components/pages/Gallery";
+import ProductsPage from "./components/pages/ProductsPage";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/products" element={<ProductsPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

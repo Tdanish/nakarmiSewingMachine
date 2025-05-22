@@ -3,11 +3,13 @@ import { NavbarMenu } from "../../mock Data/data";
 import { MdMenu } from "react-icons/md";
 import ResponsiveMenu from "./ResponsiveMenu";
 import { RxCross1 } from "react-icons/rx";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  const [activeIndex, setActiveIndex] = useState(0);
+  const currentPage = useLocation().pathname;
+
+  const [activeIndex, setActiveIndex] = useState(currentPage);
 
   return (
     <>
@@ -26,17 +28,17 @@ const Navbar = () => {
           {/* menu section  */}
           <div className="hidden md:block ">
             <ul className="flex items-center  lg:gap-6 font-bold text-sm text-white ">
-              {NavbarMenu.map((item, index) => {
+              {NavbarMenu.map((item) => {
                 return (
                   <li
                     key={item.id}
                     className={`inline-block py-1 px-3 hover:text-cyan-600 ${
-                      activeIndex === index ? "text-cyan-600" : ""
+                      activeIndex === item.link ? "text-cyan-600" : ""
                     }`}
                   >
                     <Link
                       onClick={(e) => {
-                        setActiveIndex(index);
+                        setActiveIndex(item.link);
                       }}
                       to={item.link}
                     >
